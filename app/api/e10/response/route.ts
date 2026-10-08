@@ -1,56 +1,105 @@
 import { NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
 
-type E10Response = {
-  role: "Bhandari" | "Kamath";
-  assessment: "SUPPORT" | "CONCERN" | null;
-  reason: string;
-  submittedAt: string | null;
-};
-
-let responses: E10Response[] = [];
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!
+);
 
 export async function GET() {
-  return NextResponse.json(responses);
+  const { data, error } = await supabase
+    .from("e10_responses")
+    .select("*")
+    .order("submitted_at", {
+      ascending: true,
+    });
+
+  if (error) {
+    return NextResponse.json(
+      { message: error.message },
+      { status: 500 }
+    );
+  }
+
+  return NextResponse.json(
+    data.map((item) => ({
+      role: item.role,
+      assessment: item.assessment,
+      reason: item.reason,
+      submittedAt: item.submitted_at,
+    }))
+  );
 }
 
 export async function POST(request: Request) {
   const body = await request.json();
 
-  const { role, assessment, reason } = body;
+  const {
+    role,
+    assessment,
+    reason,
+  } = body;
 
   if (!role || !assessment || !reason) {
     return NextResponse.json(
       {
-        message: "Role, assessment and reason are required.",
+        message:
+          "Role, assessment and reason are required.",
       },
       { status: 400 }
     );
   }
 
-  if (role !== "Bhandari" && role !== "Kamath") {
+  if (
+    role !== "Bhandari" &&
+    role !== "Kamath"
+  ) {
     return NextResponse.json(
-      {
-        message: "Invalid role.",
-      },
+      { message: "Invalid role." },
       { status: 400 }
     );
   }
 
-  const response: E10Response = {
-    role,
-    assessment,
-    reason,
-    submittedAt: new Date().toISOString(),
-  };
+  if (
+    assessment !== "SUPPORT" &&
+    assessment !== "CONCERN"
+  ) {
+    return NextResponse.json(
+      { message: "Invalid assessment." },
+      { status: 400 }
+    );
+  }
 
-  responses = responses.filter(
-    (item) => item.role !== role
-  );
+  const { data, error } = await supabase
+    .from("e10_responses")
+    .upsert(
+      {
+        role,
+        assessment,
+        reason,
+        submitted_at: new Date().toISOString(),
+      },
+      {
+        onConflict: "role",
+      }
+    )
+    .select()
+    .single();
 
-  responses.push(response);
+  if (error) {
+    return NextResponse.json(
+      { message: error.message },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({
     success: true,
-    response,
+    response: {
+      role: data.role,
+      assessment: data.assessment,
+      reason: data.reason,
+      submittedAt: data.submitted_at,
+    },
   });
 }
