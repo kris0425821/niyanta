@@ -1,0 +1,21 @@
+pursuit_id,company,kind,stage,owner,entered_stage_on,samples_sent,plant_reply_days_to_brief,est_annual_kg,last_customer_action,lost_or_disqualified_reason,note
+F01,Hearthline Living,new,SQL,Harpreet,2026-09-13,0,11,60000,"Asked for a 500 kg trial lot in 3 weeks, 28 Sep",,Trial question proposed by Ritika: does it hold Blue Wool 6 on ISO 105-B02 at production shade
+F02,Orvi Technical Textiles,new,Opportunity,Selvam,2026-08-19,2,9,40000,"Sample 2 approved on spec, 19 Sep",,
+F03,Silvara Home,new,Quote sent,Selvam,2026-09-23,1,6,30000,"Asked for price on 3 constructions, 23 Sep",,
+F04,Yamuna Auto Fabrics,new,MQL,Imran,2026-09-05,0,,90000,Meeting with purchase only,,
+F05,Tejas Workwear,new,Opportunity,Imran,2026-08-03,3,14,25000,"Third sample requested; earlier two passed shade, failed FR test",,Plant time spent so far: three trial setups
+F06,Kshitij Coated Fabrics,new,SQL,Selvam,2026-09-17,0,8,120000,,,
+F07,Alaknanda Luggage,new,MQL,Imran,2026-09-26,0,,,,,
+F08,Dhruva Geosynthetics,new,Lead,Lavanya,2026-09-30,0,,,,,
+F09,Lumio Blinds,new,Lead,Harpreet,2026-09-20,0,,,,,
+F10,Marutham Mats,new,Disqualified,Lavanya,2026-08-26,0,,,,Buys on price only; asked for commodity at Rs 340,
+F11,Bhoomi Rugs,new,Lost,Imran,2026-07-27,1,16,,,Customer placed with another supplier while our sample was 16 days late,
+F12,Pragati Filtration Media,new,Lost,Lavanya,2026-07-02,1,21,,,Enquiry for antimicrobial filter yarn answered after 11 days; customer had placed elsewhere,
+F13,Ambara Furnishings,upsell,Opportunity,Selvam,2026-09-02,2,7,18000,Wants dope-dyed black for outdoor cushion range,,
+F14,Strapline Webbing Industries,upsell,Quote approved,Selvam,2026-09-29,1,5,24000,Approved FR webbing yarn at Rs 640/kg,,
+F15,Bhavani Textile Corporation,upsell,SQL,Lavanya,2026-09-09,0,10,35000,Product head asked for a softer upholstery yarn,,
+F16,Velan Yarn Traders,upsell,Quote sent,Lavanya,2026-10-01,0,,150000,Asked for 10% off for a 6-month volume commitment,,
+F17,Dhow Gate Trading FZE,win-back,Lead,Harpreet,2026-06-07,0,,,No reply to 3 mails since June,,Revenue fell from Rs 12.6 Cr to Rs 1.9 Cr in two years. Reason not known.
+F18,Kongu Weaves Exports,upsell,MQL,Harpreet,2026-09-21,0,,,EU buyer asking for GRS-certified recycled yarn,,Anantha does not hold GRS
+F19,Konark Shades,upsell,PO received,Harpreet,2026-10-03,1,6,12000,PO for 2 t blackout yarn,,
+F20,Indravati Narrow Fabrics,upsell,Lost,Selvam,2026-08-14,1,18,,,Plant could not run 400 kg of a new shade inside 30 days,

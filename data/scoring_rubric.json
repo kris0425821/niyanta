@@ -1,0 +1,13 @@
+{
+  "owner": "Ritika",
+  "parameters": {
+    "P1 value of what they make (30)": "How far their product is from commodity, read from their own product description.",
+    "P2 range (10)": "How many small, varied lots they buy (suits Anantha's 500 kg minimum).",
+    "P3 structure (20)": "Corporate with product development 20, private or public limited 15, LLP 10, proprietorship or partnership 5.",
+    "P4 quantity (20)": "How much relevant yarn they could consume. Turnover under Rs 1.5 Cr 5, Rs 1.5-25 Cr 10, above Rs 25 Cr 20.",
+    "P5 margin (20)": "Own brand and develops products 20, one of the two 15, maker or trader 10, price-led trader 5."
+  },
+  "gate": 70,
+  "how_good_it_is": "Tested blind on 30 existing customers whose real purchase quantity is known: the score put 27% of them in the right quantity band. Putting every company in the middle band does about as well.",
+  "proposal_pending": "Ritika proposes reweighting to 10/10/0/40/40. On the same blind test, precision in the top quarter rises from 60% to 73%. Not approved."
+}

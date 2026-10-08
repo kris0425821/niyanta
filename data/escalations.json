@@ -1,0 +1,256 @@
+[
+  {
+    "id": "E01",
+    "raised_by": "Aditya",
+    "raised_on": "2026-10-03",
+    "to": [
+      "Mr. Kamath",
+      "Mr. Bhandari"
+    ],
+    "title": "Three specialty orders waiting for a cationic campaign",
+    "what_happened": "2.1 t of cationic orders are booked against the 4 t the plant needs before it runs the polymer. The oldest has waited 19 days. Two of the three are the company's premium accounts.",
+    "evidence": [
+      "open_orders.csv: polymer = cationic"
+    ],
+    "options": [
+      {
+        "option": "Run the campaign now with 2.1 t",
+        "cost": "About Rs 47,000 of changeover for 2.1 t",
+        "who_bears_it": "Plant"
+      },
+      {
+        "option": "Wait for 4 t",
+        "cost": "Predicted 21 more days; two premium accounts late",
+        "who_bears_it": "Marketing"
+      },
+      {
+        "option": "Sell 1.9 t more cationic yarn this week",
+        "cost": "Needs a buyer; none named yet",
+        "who_bears_it": "Marketing"
+      }
+    ],
+    "ask": "Which of the three, decided by the two V4s together."
+  },
+  {
+    "id": "E02",
+    "raised_by": "Aditya",
+    "raised_on": "2026-10-04",
+    "to": [
+      "Mr. Kamath",
+      "Kartik"
+    ],
+    "title": "L03 and L12 idle for want of orders while texturising is 17-24 days deep",
+    "what_happened": "Two extrusion lines lost about a fifth of their capacity to no orders in 30 days. Texturising and twisting are booked three weeks ahead. The plant is short downstream and idle upstream at the same time.",
+    "evidence": [
+      "lines.csv"
+    ],
+    "options": [],
+    "ask": "Is this a selling problem or a mix problem? It decides who acts."
+  },
+  {
+    "id": "E03",
+    "raised_by": "Aditya",
+    "raised_on": "2026-10-01",
+    "to": [
+      "Kartik"
+    ],
+    "title": "Priority on Velan's 12 t order pushed six other orders by about four days",
+    "what_happened": "The MD marked a 12 t commodity order urgent on 30 Sep. It jumped six lots on L06 and L08. Their predicted dates moved by four days each; four of them now land after their promised date, and one has no promised date at all.",
+    "evidence": [
+      "open_orders.csv: priority_set_by = Kartik",
+      "open_orders.csv: note starts 'Pushed back'"
+    ],
+    "options": [],
+    "ask": "Show the MD the cost of the override at the moment he sets it, not afterwards."
+  },
+  {
+    "id": "E04",
+    "raised_by": "Aditya",
+    "raised_on": "2026-09-29",
+    "to": [
+      "Mr. Kamath",
+      "Mr. Bhandari"
+    ],
+    "title": "The delivery model is not ready to quote to customers",
+    "what_happened": "Average miss 6.8 days. The range is claimed to hold 70% of the time and holds 61%. 30% of misses come from planner decisions that are written down nowhere.",
+    "evidence": [
+      "delivery_model.json"
+    ],
+    "options": [],
+    "ask": "Marketing wants dates to promise. The plant wants a reason column in the plan. Neither has happened."
+  },
+  {
+    "id": "E05",
+    "raised_by": "Ritika",
+    "raised_on": "2026-09-30",
+    "to": [
+      "Mr. Bhandari",
+      "Pranav"
+    ],
+    "title": "Dhow Gate Trading: Rs 12.6 Cr to Rs 1.9 Cr in two years, reason unknown",
+    "what_happened": "The largest export account is close to gone. Three mails since June have no reply. Nobody has visited.",
+    "evidence": [
+      "accounts.csv: A12",
+      "funnel.csv: Dhow Gate"
+    ],
+    "options": [
+      {
+        "option": "Send Harpreet to Dubai",
+        "cost": "About Rs 1.5 lakh and a week",
+        "who_bears_it": "Marketing"
+      },
+      {
+        "option": "Let it go",
+        "cost": "Rs 1.9 Cr of remaining revenue at risk",
+        "who_bears_it": "Company"
+      }
+    ],
+    "ask": "Decide whether it is worth a visit."
+  },
+  {
+    "id": "E06",
+    "raised_by": "Ritika",
+    "raised_on": "2026-09-28",
+    "to": [
+      "Kartik",
+      "Mr. Kamath"
+    ],
+    "title": "Hearthline Living asks for a 500 kg trial lot in three weeks",
+    "what_happened": "A UK retailer with 340 stores wants a trial. A 500 kg lot earns about Rs 26,000 and costs at least Rs 47,000 to set up. It loses money on the day.",
+    "evidence": [
+      "funnel.csv: F01",
+      "company.json: changeover"
+    ],
+    "options": [
+      {
+        "option": "Run it as an investment with a stated test question and a kill rule",
+        "cost": "About Rs 21,000 net, 12 hours of a line",
+        "who_bears_it": "Plant"
+      },
+      {
+        "option": "Ask for 2 t minimum",
+        "cost": "Likely loses the trial",
+        "who_bears_it": "Marketing"
+      }
+    ],
+    "ask": "Approve or refuse the trial, and say on what condition."
+  },
+  {
+    "id": "E07",
+    "raised_by": "Ritika",
+    "raised_on": "2026-09-26",
+    "to": [
+      "Kartik"
+    ],
+    "title": "The '+29% premium' on Nilgiri Drapes rests on 21% of its kilos",
+    "what_happened": "The sales review quotes Nilgiri as the highest-paying account. Only a fifth of what it buys has any peer to compare against. The two premiums that hold up are Ambara (+13% on 78%) and Strapline (+11% on 71%).",
+    "evidence": [
+      "accounts.csv: premium_vs_peers_pct, peer_coverage_pct"
+    ],
+    "options": [],
+    "ask": "Stop quoting Nilgiri as proof that customers pay for specialty."
+  },
+  {
+    "id": "E08",
+    "raised_by": "Ritika",
+    "raised_on": "2026-10-02",
+    "to": [
+      "Mr. Bhandari",
+      "Mr. Kamath"
+    ],
+    "title": "The plant takes 9.5 days on median to answer a customer brief",
+    "what_happened": "Two pursuits were lost while a sample or a reply was late (Bhoomi Rugs, Indravati). The marketing team has no promised reply time to give a customer.",
+    "evidence": [
+      "funnel.csv: plant_reply_days_to_brief"
+    ],
+    "options": [],
+    "ask": "Agree a reply time and who in the plant answers a brief."
+  },
+  {
+    "id": "E09",
+    "raised_by": "Ritika",
+    "raised_on": "2026-09-24",
+    "to": [
+      "Mr. Bhandari"
+    ],
+    "title": "Reweight the prospect score?",
+    "what_happened": "The current score does barely better than guessing on quantity. A reweight lifts top-quarter precision from 60% to 73% on a blind test.",
+    "evidence": [
+      "scoring_rubric.json",
+      "prospects.csv"
+    ],
+    "options": [
+      {
+        "option": "Approve 10/10/0/40/40",
+        "cost": "Prospect order changes; Lumio Blinds and Pragati Filtration drop below the gate of 70",
+        "who_bears_it": "Marketing"
+      },
+      {
+        "option": "Keep the current weights",
+        "cost": "Known weak ranking",
+        "who_bears_it": "Marketing"
+      }
+    ],
+    "ask": "Approve or keep."
+  },
+  {
+    "id": "E10",
+    "raised_by": "Aditya",
+    "raised_on": "2026-10-04",
+    "to": [
+      "Kartik",
+      "Mr. Bhandari"
+    ],
+    "title": "Karnavati offers 18 t of commodity at Rs 352/kg to fill L12 in October",
+    "what_happened": "L12 is idle. Peers pay about Rs 380 for the same construction. At Rs 352 the order covers variable cost and contributes about Rs 28/kg on Finance's estimate, which has no product-level cost behind it.",
+    "evidence": [
+      "open_orders.csv: status = offered",
+      "lines.csv: L12"
+    ],
+    "options": [
+      {
+        "option": "Accept as filler",
+        "cost": "Sets a price the other four traders will hear about",
+        "who_bears_it": "Company"
+      },
+      {
+        "option": "Refuse and keep L12 open for specialty",
+        "cost": "About 18 t of idle capacity if nothing else comes",
+        "who_bears_it": "Plant"
+      }
+    ],
+    "ask": "Accept or refuse. This is the order kind the mandate's direction D-01 is about."
+  },
+  {
+    "id": "E11",
+    "raised_by": "Ritika",
+    "raised_on": "2026-09-20",
+    "to": [
+      "Pranav",
+      "Mr. Bhandari"
+    ],
+    "title": "Kongu Weaves Exports' EU buyer wants GRS-certified recycled yarn",
+    "what_happened": "Anantha does not hold GRS. Vasanta does. The three Kongu accounts are one company and together are Anantha's sixth-largest customer.",
+    "evidence": [
+      "accounts.csv: legal_entity_id LE06",
+      "funnel.csv"
+    ],
+    "options": [],
+    "ask": "Decide whether to start GRS certification (about 5 months)."
+  },
+  {
+    "id": "E12",
+    "raised_by": "Aditya",
+    "raised_on": "2026-10-04",
+    "to": [
+      "Mr. Kamath"
+    ],
+    "title": "Three mixed-lustre orders due on L04",
+    "what_happened": "Mixed-lustre orders cannot share a changeover. Run in any order, each writes off cleaning loss.",
+    "evidence": [
+      "open_orders.csv: shade_family = MX"
+    ],
+    "options": [],
+    "ask": "Run, or ask marketing to price MX orders for the loss they carry."
+  }
+]

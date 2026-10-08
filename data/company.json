@@ -1,0 +1,145 @@
+{
+  "fictional": true,
+  "name": "Anantha Filament Works Ltd",
+  "what_it_makes": "Specialty polyester filament yarn: spun on its own extrusion lines, then textured and twisted in-house for some orders.",
+  "plant": "Coimbatore, Tamil Nadu",
+  "sales_offices": [
+    "Coimbatore",
+    "Tiruppur",
+    "Mumbai",
+    "Surat",
+    "Delhi"
+  ],
+  "founded": 1994,
+  "ownership": "BSE-listed. Promoter family holds the board; the MD is a professional, not family.",
+  "fy26": {
+    "revenue_cr_audited": 318.0,
+    "revenue_note": "Audited revenue includes Rs 8.4 Cr of other operating revenue (waste yarn and export incentives), which is not in the account ledger.",
+    "ebitda_cr": 13.4,
+    "ebitda_pct": 4.2,
+    "fixed_overhead_pct_of_revenue": 9.1,
+    "blended_contribution_pct": 13.3,
+    "capacity_t_per_year": 9200,
+    "output_t": 7636,
+    "utilisation_pct": 83,
+    "average_realisation_rs_per_kg": 416,
+    "headcount": 610,
+    "commercial_team": "9: one Commercial GM, four regional managers, four inside sales",
+    "active_accounts": 47,
+    "top_five_share_of_revenue_pct": 58
+  },
+  "segments": [
+    {
+      "segment": "commodity",
+      "share_of_volume_pct": 62,
+      "gross_contribution_pct": 8,
+      "typical_price_rs_per_kg": 388
+    },
+    {
+      "segment": "semi",
+      "share_of_volume_pct": 31,
+      "gross_contribution_pct": 18,
+      "typical_price_rs_per_kg": 470
+    },
+    {
+      "segment": "specialty",
+      "share_of_volume_pct": 7,
+      "gross_contribution_pct": 40,
+      "typical_price_rs_per_kg": 700
+    }
+  ],
+  "contribution_caveat": "The ERP holds no manufacturing cost per kg for any product. The three contribution rates above are Finance's annual estimate per segment. Any contribution figure for an order or an account is therefore an estimate, and should be shown as one.",
+  "lines": {
+    "extrusion_lines": 14,
+    "denier_bands": {
+      "L01-L05": "50-75D",
+      "L06-L10": "76-150D",
+      "L11-L14": "151-300D"
+    },
+    "line_throughput_kg_per_hour": 75,
+    "downstream": "6 texturising machines (TX01-TX06), 4 twisting machines (TW01-TW04)"
+  },
+  "changeover": {
+    "filament_or_denier_change": "12 hours line-down, about 900 kg of output foregone, about Rs 47,000 of contribution",
+    "colour_family_change": "380 kg written off as cleaning and loss quantity, about Rs 1.58 lakh",
+    "minimum_commercial_lot_kg": 500,
+    "trial_lot_note": "A 500 kg trial lot earns about Rs 26,000 of contribution and costs at least Rs 47,000 to set up.",
+    "campaign_rule": "A special polymer (cationic, FR, recycled) is run only when at least 4 t of orders for it are booked. Below that, orders wait."
+  },
+  "dormant_capabilities": [
+    {
+      "capability": "Antimicrobial masterbatch",
+      "developed": "FY23",
+      "cost_cr": 1.4,
+      "trials": 2,
+      "kg_sold_in_3_years": 0
+    },
+    {
+      "capability": "Solution-dyed (dope-dyed) black",
+      "developed": "FY24",
+      "kg_sold_total": 4200
+    }
+  ],
+  "certifications_held": [
+    "ISO 9001",
+    "OEKO-TEX Standard 100"
+  ],
+  "certifications_not_held": [
+    "GRS (recycled content)",
+    "bluesign"
+  ],
+  "competitors": [
+    {
+      "name": "Vasanta Technical Yarns",
+      "fictional": true,
+      "note": "Same machines, 18.5% operating margin, 11 application engineers, 40% specialty volume."
+    }
+  ],
+  "mandate": {
+    "set_by": [
+      "Kartik",
+      "Pranav"
+    ],
+    "set_on": "2026-04-14",
+    "statement": "EBITDA from Rs 13.4 Cr to Rs 24 Cr by the end of FY28, on roughly the same tonnage.",
+    "review": "Quarterly, with the board.",
+    "confidence_bands": "low < directional < strong. A direction is later reconciled as validated, contradicted or insufficient (too early or too thin to tell).",
+    "bridge": [
+      {
+        "lever": "Shift 4 points of volume (about 305 t) from commodity to specialty",
+        "rs_cr": 7.6,
+        "owner_level": "V4 Marketing + V4 Plant",
+        "confidence": "low",
+        "why_this_confidence": "No named buyer yet holds more than 40 t a year of specialty demand.",
+        "arithmetic": "305,000 kg x (Rs 280 - Rs 31 contribution per kg)"
+      },
+      {
+        "lever": "Close 2 points of the price gap on the five largest accounts",
+        "rs_cr": 3.7,
+        "owner_level": "V5 (pricing is the MD's call)",
+        "confidence": "directional",
+        "why_this_confidence": "Peer-price comparison covers 75-88% of their kilos.",
+        "arithmetic": "2% of Rs 184.4 Cr, the five largest accounts' FY26 revenue"
+      },
+      {
+        "lever": "Halve colour-family write-offs at extrusion by sequencing",
+        "rs_cr": 1.3,
+        "owner_level": "V4 Plant",
+        "confidence": "directional",
+        "why_this_confidence": "Changeover count is logged; loss per change is an engineering estimate.",
+        "arithmetic": "half of 168 colour-family changes a year at extrusion x Rs 1.58 lakh write-off"
+      },
+      {
+        "lever": "Two new accounts buying about 25 t a year each of specialty",
+        "rs_cr": 1.4,
+        "owner_level": "V4 Marketing",
+        "confidence": "low",
+        "why_this_confidence": "Two pursuits past sampling in 12 months.",
+        "arithmetic": "2 x 25,000 kg x Rs 280 contribution per kg"
+      }
+    ],
+    "gap_cr": 10.6,
+    "bridge_total_cr": 14.0,
+    "bridge_note": "The levers add up to more than the gap. The owners expect some of them to fall short."
+  }
+}

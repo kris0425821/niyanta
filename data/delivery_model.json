@@ -1,0 +1,22 @@
+{
+  "owner": "Aditya",
+  "as_of": "2026-10-05",
+  "what_it_predicts": "The date each open order line is invoiced, with an earliest and latest date.",
+  "tested_on": "190 order lines closed in July and August 2026, predicted as if from 1 July without knowing the outcome.",
+  "average_miss_days": 6.8,
+  "share_within_5_days_pct": 44,
+  "range_claimed_to_hold_pct": 70,
+  "range_actually_held_pct": 61,
+  "strongest_signal": "If the lot has started on its line, median 5 days to invoice. If not, median 19 days.",
+  "where_the_misses_come_from_pct": {
+    "visible in the data (queue, campaign, changeover)": 55,
+    "planner decisions not recorded anywhere": 30,
+    "unexplained": 15
+  },
+  "known_gaps": [
+    "The plan file has no reason column, so a line change or priority jump cannot be explained from data.",
+    "Promised dates are missing on about 1 order in 8; the practice of entering them lapsed in 2025.",
+    "Packing is entered 2 to 3 days after production."
+  ],
+  "status": "Not yet good enough to print on a customer confirmation. Aditya's target is an average miss of 4 days."
+}

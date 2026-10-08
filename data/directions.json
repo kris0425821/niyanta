@@ -1,0 +1,54 @@
+[
+  {
+    "id": "D-01",
+    "set_by": "Kartik",
+    "set_on": "2026-08-04",
+    "level": "V5",
+    "direction": "Keep 10% of extrusion capacity free for specialty and semi-specialty work. Stop taking commodity orders priced more than 4% below peers.",
+    "rationale": "Commodity fills the plant at 8% contribution and leaves no room when a specialty order arrives.",
+    "confidence_when_set": "low",
+    "review_by": "2026-11-04",
+    "responses": [
+      {
+        "by": "Mr. Bhandari",
+        "on": "2026-08-06",
+        "response": "declined for two accounts",
+        "accounts": [
+          "Velan Yarn Traders",
+          "Karnavati Fabric Agency"
+        ],
+        "reason": "Together a quarter of revenue. They will move volume to another supplier inside a month."
+      },
+      {
+        "by": "Mr. Kamath",
+        "on": "2026-08-07",
+        "response": "accepted",
+        "note": "Holds L09 and L10 for specialty. Says the 10% is easy while orders are slow, hard in season."
+      }
+    ],
+    "evidence_so_far": "Specialty volume Aug-Sep: 7.4% of output against 7.0% before. Two months; too little to read.",
+    "reconciliation_so_far": "insufficient",
+    "status": "in force, not yet reviewed"
+  },
+  {
+    "id": "D-02",
+    "set_by": "Pranav",
+    "set_on": "2026-09-01",
+    "level": "V5",
+    "direction": "Win two accounts in curtains or upholstery that buy on specification before the end of Q4, and show the sales team how they were won.",
+    "rationale": "The sales team will believe a win, not a presentation.",
+    "confidence_when_set": "low",
+    "review_by": "2026-12-31",
+    "responses": [
+      {
+        "by": "Mr. Bhandari",
+        "on": "2026-09-03",
+        "response": "accepted",
+        "note": "Named Silvara Home and Hearthline Living as the two."
+      }
+    ],
+    "evidence_so_far": "Silvara at Quote sent. Hearthline at SQL, waiting on a trial decision (E06).",
+    "reconciliation_so_far": "insufficient",
+    "status": "in force"
+  }
+]

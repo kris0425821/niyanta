@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Kartik",
+    "level": "V5",
+    "title": "Managing Director",
+    "background": "Chartered Accountant, 17 years in yarn, MD since 2024. Not from the promoter family.",
+    "decides": [
+      "Prices for the large accounts, personally",
+      "Which order kind to accept: good margin, strategic (below margin to win or keep an account), or filler (to keep a line running)",
+      "Priority overrides on the plant"
+    ],
+    "worries": [
+      "Orders promised in 14 days arriving in 18 to 20",
+      "A loss he believes is there and has never measured"
+    ],
+    "says": [
+      "Either we find new markets or we sell more to the people who already buy. Everything else is decoration.",
+      "Customers in a first meeting tell you: send a sample, then we will talk.",
+      "It is not yet time to refuse orders. We refuse orders when the pipeline is full of better ones.",
+      "Our customers stay with us. Hardly anyone has left in ten years.",
+      "We are a 340 crore company this year."
+    ]
+  },
+  {
+    "name": "Pranav",
+    "level": "V5",
+    "title": "Executive Director",
+    "background": "Second generation of the promoter family. Started the company's small online retail line.",
+    "decides": [
+      "Board-level direction alongside Kartik",
+      "How fast change is pushed on the sales team"
+    ],
+    "worries": [
+      "Creating demand the plant cannot deliver on time",
+      "A sales team that does not believe the plant can do specialty work"
+    ],
+    "says": [
+      "If the plant is not fixed first, more demand only means more late orders.",
+      "Give me one or two real wins with named customers. The sales team will believe a win, not a presentation.",
+      "Even if we lose the order, the customer should leave thinking differently about us."
+    ]
+  },
+  {
+    "name": "Mr. Bhandari",
+    "level": "V4",
+    "function": "Marketing and sales",
+    "title": "Commercial GM",
+    "background": "19 years at Anantha. Runs four regional managers and four inside-sales staff.",
+    "decides": [
+      "Which accounts and prospects the team works",
+      "What goes on the sample brief to the plant",
+      "Whether to accept a direction from V5 as stated, or decline it for named accounts with a reason"
+    ],
+    "worries": [
+      "Promising a customer something the plant then does not deliver",
+      "Customers who will not wait more than 30 days"
+    ],
+    "says": [
+      "If we pick up something interesting in the market we mail it to the plant. Then nobody takes it forward.",
+      "Most of the time we are the third supplier they try. Two have already failed them.",
+      "If I can sell 200 tonnes today I need 200 tonnes today, not next year.",
+      "Do not use the word EBITDA with my team. Tell them what to sell."
+    ]
+  },
+  {
+    "name": "Mr. Kamath",
+    "level": "V4",
+    "function": "Plant",
+    "title": "Plant Head",
+    "background": "24 years at Anantha. PPC, production, QC and maintenance report to him.",
+    "decides": [
+      "Line allocation and run sequence",
+      "When a special-polymer campaign runs",
+      "Whether a priority override is accepted, and what it pushes back"
+    ],
+    "worries": [
+      "No second line of people under his department heads",
+      "Small lots on lines built for large ones"
+    ],
+    "says": [
+      "The gap is not in the plant. The gap is in marketing. Fill the order book for two months and delays solve themselves.",
+      "First in, first out is the rule. I break it when two orders can share a changeover, or when the MD calls.",
+      "Give my department heads three buttons that tell them what to run next. That is all they need.",
+      "L08 is a big-lot line. Do not put 500 kg orders on it."
+    ]
+  },
+  {
+    "name": "Ritika",
+    "level": "V3",
+    "title": "Program Manager, Growth (DeepThought, placed at Anantha)",
+    "sits_with": "Mr. Bhandari, Coimbatore office",
+    "owns": [
+      "Prospect research and scoring (prospects.csv)",
+      "The funnel record (funnel.csv)",
+      "Escalations on demand, pricing and accounts"
+    ]
+  },
+  {
+    "name": "Aditya",
+    "level": "V3",
+    "title": "Program Manager, Plant (DeepThought, placed at Anantha)",
+    "sits_with": "Mr. Kamath, plant",
+    "owns": [
+      "The delivery-date model (delivery_model.json and the predicted dates in open_orders.csv)",
+      "Line and stage load (lines.csv)",
+      "Escalations on capacity, campaigns and overrides"
+    ]
+  },
+  {
+    "name": "Imran",
+    "level": "V1",
+    "title": "Regional Manager, North (Delhi)"
+  },
+  {
+    "name": "Lavanya",
+    "level": "V1",
+    "title": "Regional Manager, South (Coimbatore, Tiruppur)"
+  },
+  {
+    "name": "Selvam",
+    "level": "V1",
+    "title": "Regional Manager, West (Mumbai, Surat)"
+  },
+  {
+    "name": "Harpreet",
+    "level": "V1",
+    "title": "Regional Manager, Exports"
+  }
+]

@@ -1,0 +1,20 @@
+prospect_id,company,what_they_make,p1_value_of_what_they_make_30,p2_range_10,p3_structure_20,p4_quantity_20,p5_margin_20,total_100,evidence_confidence,relationship,in_funnel
+P01,Hearthline Living,"UK and EU home-furnishing retailer, 340 stores; buys fabric from weavers, sets yarn spec",26,6,20,15,20,87,medium,none found,F01
+P02,Kshitij Coated Fabrics,PVC and PU coated fabric for tarpaulin and luggage,24,8,15,20,15,82,medium,none found,F06
+P03,Orvi Technical Textiles,Narrow fabrics and webbing for safety harnesses,27,9,20,10,20,86,high,none found,F02
+P04,Silvara Home,Curtain and upholstery brand that runs its own looms,25,8,20,15,20,88,medium,none found,F03
+P05,Dhruva Geosynthetics,Geotextiles and geogrids for road projects,22,6,20,20,10,78,medium,none found,F08
+P06,Pragati Filtration Media,Industrial filter fabric,26,7,15,10,15,73,low,none found,F12
+P07,Marutham Mats,Bath mats and rugs for export,15,9,15,15,10,64,high,none found,F10
+P08,Konkan Sail and Shade,Shade nets and outdoor awning fabric,21,7,15,10,15,68,low,none found,
+P09,Yamuna Auto Fabrics,Seat fabric for two-wheeler and car makers,28,5,20,20,15,88,medium,none found,F04
+P10,Indus Medical Textiles,Surgical drapes and gowns,23,6,15,5,15,64,low,none found,
+P11,Bhoomi Rugs,"Hand-tufted rugs, exporter",14,9,10,10,10,53,high,none found,F11
+P12,Tejas Workwear,FR and high-visibility workwear fabric,27,7,15,10,20,79,medium,none found,F05
+P13,Alaknanda Luggage,Soft luggage brand that also makes its own fabric,24,6,20,15,20,85,medium,none found,F07
+P14,Saptagiri Elastics,Elastic tapes for innerwear,16,8,10,10,10,54,high,none found,
+P15,Saryu Upholstery,Sofa fabric weaver,18,8,10,10,10,56,medium,none found,
+P16,Ocean Rope Works,Marine and fishing rope,19,5,15,15,10,64,low,none found,
+P17,Neelgagan Denim,Denim mill,12,4,20,20,10,66,medium,none found,
+P18,Charaka Hospital Linen,Hospital bed linen and curtains,22,6,10,5,15,58,low,none found,
+P19,Lumio Blinds,Roller and blackout blinds,25,8,15,10,15,73,medium,none found,F09

@@ -1,0 +1,56 @@
+account_id,account_name,legal_entity_id,buyer_type,end_use,region,owner,customer_since,fy24_revenue_cr,fy25_revenue_cr,fy26_revenue_cr,fy26_kg,fy26_realised_rs_per_kg,premium_vs_peers_pct,peer_coverage_pct,share_commodity,share_semi,share_specialty,est_contribution_rs_per_kg,status
+A01,Velan Yarn Traders,LE01,trader,mixed,South,Lavanya,2003,41.8,44.0,46.2,1228723,376,-6.1,88,0.85,0.15,0.0,15,active
+A02,Rasipuram Agencies,LE02,trader,mixed,South,Lavanya,2006,39.2,40.1,41.0,1064935,385,-4.8,84,0.8,0.2,0.0,22,active
+A03,Jaiswal Synthetics,LE03,trader,carpet and rugs,North,Imran,2009,30.4,33.9,36.5,950521,384,-5.5,80,0.78,0.22,0.0,20,active
+A04,Bhavani Textile Corporation,LE04,weaver,upholstery,South,Lavanya,1998,33.0,31.7,32.1,784841,409,-3.9,75,0.6,0.38,0.02,40,active
+A05,Karnavati Fabric Agency,LE05,trader,mixed,West,Selvam,2011,24.9,27.2,28.6,770889,371,-6.8,82,0.88,0.12,0.0,10,active
+A06,Kongu Weaves,LE06,weaver,curtains,South,Lavanya,2008,11.1,11.9,12.4,287703,431,-1.2,70,0.55,0.4,0.05,60,active
+A07,Kongu Weaves Exports,LE06,weaver,curtains,Export,Harpreet,2014,8.0,9.2,10.1,227477,444,-0.8,66,0.5,0.42,0.08,70,active
+A08,KW Home Textiles,LE06,weaver,bed linen,South,Lavanya,2019,5.1,6.6,7.7,168122,458,0.4,61,0.45,0.45,0.1,82,active
+A09,Ambara Furnishings,LE09,brand that also weaves,curtains and upholstery,West,Selvam,2018,2.9,3.6,4.1,64163,639,13.0,78,0.1,0.45,0.45,241,active
+A10,Strapline Webbing Industries,LE10,trims maker,webbing and tapes,West,Selvam,2020,2.2,2.7,3.2,51696,619,11.0,71,0.05,0.55,0.4,221,active
+A11,Nilgiri Drapes,LE11,weaver,curtains,South,Lavanya,2017,1.2,1.4,1.6,25682,623,29.0,21,0.4,0.4,0.2,242,active
+A12,Dhow Gate Trading FZE,LE12,trader,mixed,Export,Harpreet,2012,12.6,7.4,1.9,46569,408,-1.0,63,0.7,0.3,0.0,43,active
+A13,Sathya Tapes,LE13,trims maker,elastic tapes,South,Lavanya,2010,1.82,1.67,1.56,29602,527,4.0,38,0.25,0.5,0.25,140,active
+A14,Meenakshi Mills,LE14,weaver,sarees,South,Lavanya,2019,1.88,2.04,1.97,44977,438,0.4,72,0.63,0.29,0.08,68,active
+A15,Vaigai Carpets,LE15,weaver,carpet and rugs,South,Lavanya,2000,2.21,2.52,2.23,50567,441,7.3,71,0.72,0.28,0.0,76,active
+A16,Aravali Rug Works,LE16,weaver,carpet and rugs,North,Imran,2019,1.11,1.22,1.39,34069,408,-0.6,72,0.72,0.28,0.0,44,active
+A17,Doab Floorings,LE17,weaver,carpet and rugs,North,Imran,2019,1.15,1.29,1.15,26807,429,-1.2,40,0.58,0.37,0.05,58,active
+A18,Narmada Knit Fab,LE18,knitter,sportswear fabric,West,Selvam,2014,1.32,1.31,1.33,30505,436,2.8,70,0.62,0.36,0.02,67,active
+A19,Sabarmati Laces,LE19,trims maker,laces,West,Selvam,2011,1.24,1.41,1.25,28153,444,2.2,64,0.66,0.26,0.08,74,active
+A20,Tapti Yarn House,LE20,trader,mixed,West,Selvam,2023,3.99,3.89,3.97,104749,379,-6.0,39,0.82,0.18,0.0,17,active
+A21,Konark Shades,LE21,weaver,curtains,Export,Harpreet,2010,5.45,5.85,5.72,135867,421,-1.4,53,0.75,0.17,0.08,54,active
+A22,Palar Furnishing Fabrics,LE22,weaver,upholstery,South,Lavanya,2022,2.32,2.4,2.57,62077,414,-1.2,47,0.68,0.3,0.02,47,active
+A23,Amaravati Weaving Co,LE23,weaver,upholstery,South,Lavanya,2009,1.08,1.2,1.06,25481,416,-2.8,79,0.74,0.18,0.08,49,active
+A24,Chambal Bath Linen,LE24,weaver,bath mats,North,Imran,2021,1.7,1.84,1.74,40185,433,1.0,39,0.73,0.19,0.08,65,active
+A25,Shivneri Synthetics,LE25,trader,mixed,West,Selvam,2007,4.41,4.3,4.76,120202,396,-1.6,82,0.82,0.18,0.0,34,active
+A26,Kaveripattinam Textiles,LE26,weaver,bed linen,South,Lavanya,2006,1.29,1.17,1.05,25735,408,-1.1,60,0.76,0.22,0.02,43,active
+A27,Gomti Weaves,LE27,weaver,curtains,North,Imran,2020,1.34,1.23,1.41,31544,447,2.8,39,0.65,0.27,0.08,78,active
+A28,Malabar Coir and Yarn,LE28,weaver,floor mats,South,Lavanya,2017,1.67,1.87,1.65,36504,452,3.1,43,0.61,0.31,0.08,81,active
+A29,Thar Rugs,LE29,weaver,carpet and rugs,North,Imran,2011,12.53,11.94,10.98,271782,404,-0.8,68,0.77,0.23,0.0,40,active
+A30,Indravati Narrow Fabrics,LE30,trims maker,webbing and tapes,West,Selvam,2000,2.63,2.54,2.28,43595,523,3.2,44,0.25,0.5,0.25,136,active
+A31,Pennar Fabrics,LE31,weaver,upholstery,South,Lavanya,2002,1.36,1.27,1.16,27166,427,4.4,52,0.8,0.18,0.02,64,active
+A32,Sahyadri Knits,LE32,knitter,shoe uppers,West,Selvam,2018,2.12,2.01,2.05,41331,496,-2.1,64,0.25,0.5,0.25,109,active
+A33,Mahanadi Exports,LE33,trader,mixed,Export,Harpreet,2004,2.26,2.35,2.41,61954,389,-3.3,51,0.82,0.18,0.0,27,active
+A34,Ponni Home Linen,LE34,weaver,bed linen,South,Lavanya,2003,1.53,1.65,1.7,41063,414,-0.5,72,0.71,0.27,0.02,48,active
+A35,Sutlej Floor Coverings,LE35,weaver,carpet and rugs,North,Imran,2018,2.08,2.2,2.44,58795,415,-1.0,62,0.76,0.19,0.05,49,active
+A36,Bhima Industrial Fabrics,LE36,weaver,coated fabric base,West,Selvam,2005,1.25,1.37,1.57,31337,501,-1.1,75,0.25,0.5,0.25,114,active
+A37,Kollidam Tapes,LE37,trims maker,elastic tapes,South,Lavanya,2014,6.8,7.41,7.36,151753,485,-4.4,63,0.25,0.5,0.25,98,active
+A38,Vindhya Drapes,LE38,weaver,curtains,North,Imran,2002,1.0,1.13,1.17,27857,420,0.7,81,0.64,0.36,0.0,53,active
+A39,Cauvery Delta Weaves,LE39,weaver,upholstery,South,Lavanya,2014,1.38,1.34,1.5,36765,408,-1.4,80,0.69,0.31,0.0,42,active
+A40,Nandi Hills Mats,LE40,weaver,bath mats,South,Lavanya,2011,1.46,1.47,1.4,32864,426,-1.0,63,0.63,0.32,0.05,56,active
+A41,Godavari Trading Co,LE41,trader,mixed,South,Lavanya,2003,4.16,4.7,4.58,117436,390,-3.1,46,0.82,0.18,0.0,28,active
+A42,Lagos Bridge Textiles Ltd,LE42,trader,mixed,Export,Harpreet,2017,1.58,1.8,1.64,43045,381,-5.3,73,0.82,0.18,0.0,19,active
+A43,Kosi Rope and Twine,LE43,weaver,ropes,North,Imran,2021,1.7,1.65,1.86,43560,427,2.8,68,0.72,0.26,0.02,62,active
+A44,Banas Pile Fabrics,LE44,weaver,pile fabric,North,Imran,2016,1.16,1.3,1.26,29929,421,-2.9,56,0.59,0.36,0.05,50,active
+A45,Mandovi Sailcloth,LE45,weaver,outdoor fabric,West,Selvam,2016,1.63,1.52,1.68,32812,512,1.0,59,0.25,0.5,0.25,125,active
+A46,Tungabhadra Narrow Wovens,LE46,trims maker,labels and tapes,South,Lavanya,2022,1.06,1.03,1.15,27644,416,2.1,70,0.76,0.24,0.0,52,active
+A47,Periyar Coated Textiles,LE47,weaver,coated fabric base,South,Lavanya,2022,1.35,1.25,1.19,23800,500,-1.3,81,0.25,0.5,0.25,113,active
+X01,Thenpennai Technical Yarns,LX01,weaver,industrial fabric,South,Lavanya,2018,3.4,1.1,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X02,Rann Textile Traders,LX02,trader,mixed,West,Selvam,2007,2.8,0.6,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X03,Kalindi Carpets,LX03,weaver,carpet and rugs,North,Imran,2011,2.1,0.0,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X04,Moyar Knit Fabrics,LX04,knitter,sportswear fabric,South,Lavanya,2014,1.9,0.4,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X05,Dhaka Gate Fabrics Ltd,LX05,trader,mixed,Export,Harpreet,2020,1.6,0.9,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X06,Penganga Laces,LX06,trims maker,laces,West,Selvam,2019,0.9,0.2,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X07,Ken River Mats,LX07,weaver,bath mats,North,Imran,2010,0.7,0.0,0,0,,,,0.7,0.3,0.0,,no orders in FY26
+X08,Shimsha Upholstery,LX08,weaver,upholstery,South,Lavanya,2009,0.6,0.3,0,0,,,,0.7,0.3,0.0,,no orders in FY26
