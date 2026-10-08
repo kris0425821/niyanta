@@ -41,7 +41,10 @@ export default function E10Decision() {
   async function loadData() {
     try {
       const decisionResponse = await fetch(
-        "/api/e10/decision"
+        "/api/e10/decision",
+        {
+          cache: "no-store",
+        }
       );
 
       const decisionData =
@@ -55,7 +58,10 @@ export default function E10Decision() {
       }
 
       const response = await fetch(
-        "/api/e10/response"
+        "/api/e10/response",
+        {
+          cache: "no-store",
+        }
       );
 
       const responseData = await response.json();
@@ -68,8 +74,25 @@ export default function E10Decision() {
     }
   }
 
+  // Load initially, then keep Kartik's screen
+  // synchronized with the Supabase-backed workflow.
   useEffect(() => {
     loadData();
+
+    const interval = setInterval(() => {
+      loadData();
+    }, 3000);
+
+    const handleFocus = () => {
+      loadData();
+    };
+
+    window.addEventListener("focus", handleFocus);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("focus", handleFocus);
+    };
   }, []);
 
   async function requestViews() {
@@ -94,11 +117,15 @@ export default function E10Decision() {
 
       if (!response.ok) {
         throw new Error(
-          data.message || "Failed to request views."
+          data.message ||
+            "Failed to request views."
         );
       }
 
       setE10(data.decision);
+
+      // Immediately refresh responses too.
+      await loadData();
     } catch (error) {
       setError(
         error instanceof Error
@@ -111,7 +138,10 @@ export default function E10Decision() {
   }
 
   async function submitFinalDecision() {
-    if (!decision || reason.trim().length < 5) {
+    if (
+      !decision ||
+      reason.trim().length < 5
+    ) {
       return;
     }
 
@@ -139,12 +169,15 @@ export default function E10Decision() {
 
       if (!response.ok) {
         throw new Error(
-          data.message || "Failed to save decision."
+          data.message ||
+            "Failed to save decision."
         );
       }
 
       setE10(data.decision);
       setOpen(false);
+
+      await loadData();
     } catch (error) {
       setError(
         error instanceof Error
@@ -391,16 +424,25 @@ export default function E10Decision() {
       </div>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <Fact label="Quantity" value="18 tonnes" />
+        <Fact
+          label="Quantity"
+          value="18 tonnes"
+        />
 
-        <Fact label="Offered price" value="₹352/kg" />
+        <Fact
+          label="Offered price"
+          value="₹352/kg"
+        />
 
         <Fact
           label="Comparable price"
           value="~₹380/kg"
         />
 
-        <Fact label="Production line" value="L12" />
+        <Fact
+          label="Production line"
+          value="L12"
+        />
       </div>
 
       <div className="mt-6 rounded-lg border border-amber-100 bg-amber-50 p-4">
@@ -619,7 +661,9 @@ function DecisionModal({
 
           <textarea
             value={reason}
-            onChange={(e) => setReason(e.target.value)}
+            onChange={(e) =>
+              setReason(e.target.value)
+            }
             rows={5}
             placeholder="Explain your final decision after considering both views..."
             className="mt-2 w-full rounded-lg border border-slate-300 p-3 text-sm outline-none focus:border-slate-900 focus:ring-1 focus:ring-slate-900"
