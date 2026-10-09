@@ -18,6 +18,14 @@ function fmt(date?: string | null) {
       });
 }
 
+function fmtDay(date?: string | null) {
+  if (!date) return "today";
+  const d = new Date(date);
+  return isNaN(d.getTime())
+    ? "today"
+    : d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+}
+
 // What goes back to Aditya (V3, sits with Kamath, does not log in to Niyanta).
 export default function AdityaReturn({
   decision,
@@ -60,6 +68,13 @@ export default function AdityaReturn({
         <p>
           <span className="font-semibold">Why: </span>
           {reason}
+        </p>
+
+        <p>
+          <span className="font-semibold">Takes effect: </span>
+          {accepted
+            ? `From ${fmtDay(decidedAt)}. The order is for L12 in October; the exact ship date is still to be set.`
+            : `From ${fmtDay(decidedAt)}. L12 stays open; nothing is scheduled.`}
         </p>
 
         <p>

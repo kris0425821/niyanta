@@ -495,7 +495,7 @@ export default function E10Decision() {
 
         <Fact
           label="Comparable price"
-          value="~₹380/kg"
+          value="₹362-380/kg"
         />
 
         <Fact

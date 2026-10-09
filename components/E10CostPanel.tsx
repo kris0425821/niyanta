@@ -96,16 +96,16 @@ export default function E10CostPanel() {
       {/* DIRECTION CHECK */}
       <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-slate-800">
         <p className="font-semibold">
-          Your direction D-01: stop taking commodity orders priced more than{" "}
-          {E10.d01ThresholdPct}% below peers
+          D-01, the rule you set in August: don&apos;t take commodity orders
+          priced more than {E10.d01ThresholdPct}% below what other customers pay
         </p>
 
         <p className="mt-2">
           This offer is <span className="font-semibold">{pctVs362.toFixed(1)}%</span>{" "}
-          below peers if peers pay ₹{E10.peerPriceOrderNote} (inside the rule),
-          or <span className="font-semibold">{pctVs380.toFixed(1)}%</span> below
-          if they pay ₹{E10.peerPriceEscalation} (outside it). The answer
-          depends on which peer price is right.
+          below other customers if they pay ₹{E10.peerPriceOrderNote} (inside the
+          rule), or <span className="font-semibold">{pctVs380.toFixed(1)}%</span>{" "}
+          below if they pay ₹{E10.peerPriceEscalation} (outside it). The company&apos;s
+          own files disagree on which is right.
         </p>
 
         {declinedKarnavati && (
