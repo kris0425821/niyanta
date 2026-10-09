@@ -6,6 +6,9 @@ import RoleShell from "@/components/RoleShell";
 import StatCard from "@/components/StatCard";
 import E10Decision from "@/components/E10Decision";
 import { directions, escalations } from "@/lib/data";
+import DirectionCard from "@/components/DirectionCard";
+import E10ReviewNote from "@/components/E10ReviewNote";
+import ResetDemoButton from "@/components/ResetDemoButton";
 
 function KartikContent() {
   const searchParams = useSearchParams();
@@ -234,110 +237,96 @@ function KartikContent() {
 
             <div className="mt-5 space-y-4">
               {Array.isArray(directions) &&
-                directions.map((direction: any, index: number) => (
-                  <div
-                    key={index}
-                    className="rounded-xl border border-slate-100 bg-slate-50 p-5"
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">
-                          {direction.id ??
-                            `Direction ${index + 1}`}
-                        </p>
-
-                        <p className="mt-2 font-semibold text-slate-900">
-                          {direction.direction ??
-                            direction.description ??
-                            "Direction under review"}
-                        </p>
-                      </div>
-
-                      <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-                        ACTIVE
-                      </span>
-                    </div>
-                  </div>
+                directions.map((direction: any) => (
+                  <DirectionCard key={direction.id} direction={direction}>
+                    {direction.id === "D-01" && <E10ReviewNote />}
+                  </DirectionCard>
                 ))}
             </div>
-          </section>
-        </>
-      )}
 
-      {/* =====================================================
+            
+          </section >
+        </>
+      )
+}
+
+{/* =====================================================
           ESCALATIONS
       ===================================================== */}
-      {section === "escalations" && (
-        <>
-          <div>
-            <p className="text-sm font-medium text-blue-600">
-              V5 · Escalations
-            </p>
+{
+  section === "escalations" && (
+    <>
+      <div>
+        <p className="text-sm font-medium text-blue-600">
+          V5 · Escalations
+        </p>
 
-            <h1 className="mt-1 text-3xl font-bold text-slate-900">
-              Escalations
-            </h1>
+        <h1 className="mt-1 text-3xl font-bold text-slate-900">
+          Escalations
+        </h1>
 
-            <p className="mt-2 text-slate-500">
-              Issues routed to V5 where a company-level decision
-              or direction may be required.
-            </p>
-          </div>
+        <p className="mt-2 text-slate-500">
+          Issues routed to V5 where a company-level decision
+          or direction may be required.
+        </p>
+      </div>
 
-          <section className="mt-8">
-            <div className="space-y-4">
-              {Array.isArray(escalations) &&
-                escalations.map((item: any, index: number) => (
-                  <div
-                    key={index}
-                    className="rounded-xl border border-slate-200 bg-white p-6"
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
-                          {item.id ??
-                            `Escalation ${index + 1}`}
-                        </p>
+      <section className="mt-8">
+        <div className="space-y-4">
+          {Array.isArray(escalations) &&
+            escalations.map((item: any, index: number) => (
+              <div
+                key={index}
+                className="rounded-xl border border-slate-200 bg-white p-6"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">
+                      {item.id ??
+                        `Escalation ${index + 1}`}
+                    </p>
 
-                        <p className="mt-2 font-semibold text-slate-900">
-                          {item.what_happened ??
-                            item.summary ??
-                            "Escalation requiring review"}
-                        </p>
-                      </div>
-
-                      <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
-                        REVIEW
-                      </span>
-                    </div>
-
-                    {item.raised_by && (
-                      <p className="mt-4 text-sm text-slate-500">
-                        Raised by:{" "}
-                        <span className="font-medium text-slate-700">
-                          {item.raised_by}
-                        </span>
-                      </p>
-                    )}
-
-                    {item.ask && (
-                      <div className="mt-4 rounded-lg bg-slate-50 p-4">
-                        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                          Decision required
-                        </p>
-
-                        <p className="mt-2 text-sm text-slate-700">
-                          {item.ask}
-                        </p>
-                      </div>
-                    )}
+                    <p className="mt-2 font-semibold text-slate-900">
+                      {item.what_happened ??
+                        item.summary ??
+                        "Escalation requiring review"}
+                    </p>
                   </div>
-                ))}
-            </div>
-          </section>
-        </>
-      )}
-    </RoleShell>
+
+                  <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+                    REVIEW
+                  </span>
+                </div>
+
+                {item.raised_by && (
+                  <p className="mt-4 text-sm text-slate-500">
+                    Raised by:{" "}
+                    <span className="font-medium text-slate-700">
+                      {item.raised_by}
+                    </span>
+                  </p>
+                )}
+
+                {item.ask && (
+                  <div className="mt-4 rounded-lg bg-slate-50 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      Decision required
+                    </p>
+
+                    <p className="mt-2 text-sm text-slate-700">
+                      {item.ask}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+        </div>
+      </section>
+    </>
+  )
+}
+      <ResetDemoButton />
+    </RoleShell >
   );
 }
 

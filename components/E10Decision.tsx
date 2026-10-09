@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import E10CostPanel from "./E10CostPanel";
+import AdityaReturn from "./AdityaReturn";
 
 type Decision = "ACCEPT" | "DECLINE" | null;
 
@@ -36,6 +38,7 @@ export default function E10Decision() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [requesting, setRequesting] = useState(false);
+  const [resetting, setResetting] = useState(false);
   const [error, setError] = useState("");
 
   async function loadData() {
@@ -118,7 +121,7 @@ export default function E10Decision() {
       if (!response.ok) {
         throw new Error(
           data.message ||
-            "Failed to request views."
+          "Failed to request views."
         );
       }
 
@@ -170,7 +173,7 @@ export default function E10Decision() {
       if (!response.ok) {
         throw new Error(
           data.message ||
-            "Failed to save decision."
+          "Failed to save decision."
         );
       }
 
@@ -186,6 +189,51 @@ export default function E10Decision() {
       );
     } finally {
       setSaving(false);
+    }
+  }
+
+  // Demo only: puts E10 back to the start.
+  async function resetDemo() {
+    if (
+      !window.confirm(
+        "Reset E10 to the start? This clears the decision and both views."
+      )
+    ) {
+      return;
+    }
+
+    setResetting(true);
+    setError("");
+
+    try {
+      const response = await fetch(
+        "/api/e10/reset",
+        {
+          method: "POST",
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.message || "Reset failed."
+        );
+      }
+
+      setDecision(null);
+      setReason("");
+      setOpen(false);
+
+      await loadData();
+    } catch (error) {
+      setError(
+        error instanceof Error
+          ? error.message
+          : "Reset failed."
+      );
+    } finally {
+      setResetting(false);
     }
   }
 
@@ -259,9 +307,18 @@ export default function E10Decision() {
           </p>
         </div>
 
+        <AdityaReturn
+          decision={e10.decision}
+          reason={e10.reason}
+          decidedBy={(e10 as any).decided_by ?? e10.decidedBy}
+          decidedAt={(e10 as any).decided_at ?? e10.decidedAt}
+        />
+
         <p className="mt-4 text-xs text-slate-400">
-          Decided by {e10.decidedBy}
+          Decided by {(e10 as any).decided_by ?? e10.decidedBy}
         </p>
+
+        
       </div>
     );
   }
@@ -302,6 +359,8 @@ export default function E10Decision() {
             view={kamathView}
           />
         </div>
+
+        <E10CostPanel />
 
         <div className="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-5">
           <p className="text-sm font-semibold text-slate-900">
@@ -480,6 +539,8 @@ export default function E10Decision() {
         </div>
       </div>
 
+      <E10CostPanel />
+
       <button
         onClick={requestViews}
         disabled={requesting}
@@ -531,11 +592,10 @@ function ViewCard({
       </h4>
 
       <span
-        className={`mt-3 inline-block rounded-full px-3 py-1 text-xs font-bold ${
-          view.assessment === "SUPPORT"
+        className={`mt-3 inline-block rounded-full px-3 py-1 text-xs font-bold ${view.assessment === "SUPPORT"
             ? "bg-emerald-100 text-emerald-700"
             : "bg-red-100 text-red-700"
-        }`}
+          }`}
       >
         {view.assessment === "SUPPORT"
           ? "SUPPORT"
@@ -572,11 +632,10 @@ function PendingView({
         </div>
 
         <span
-          className={`rounded-full px-3 py-1 text-xs font-bold ${
-            completed
+          className={`rounded-full px-3 py-1 text-xs font-bold ${completed
               ? "bg-emerald-100 text-emerald-700"
               : "bg-amber-100 text-amber-700"
-          }`}
+            }`}
         >
           {completed ? "RECEIVED" : "WAITING"}
         </span>
@@ -621,11 +680,10 @@ function DecisionModal({
         <div className="mt-6 grid gap-3 md:grid-cols-2">
           <button
             onClick={() => setDecision("ACCEPT")}
-            className={`rounded-xl border p-5 text-left ${
-              decision === "ACCEPT"
+            className={`rounded-xl border p-5 text-left ${decision === "ACCEPT"
                 ? "border-emerald-600 bg-emerald-50 ring-2 ring-emerald-600"
                 : "border-slate-200 hover:border-slate-400"
-            }`}
+              }`}
           >
             <p className="font-bold text-slate-900">
               Accept
@@ -638,11 +696,10 @@ function DecisionModal({
 
           <button
             onClick={() => setDecision("DECLINE")}
-            className={`rounded-xl border p-5 text-left ${
-              decision === "DECLINE"
+            className={`rounded-xl border p-5 text-left ${decision === "DECLINE"
                 ? "border-red-600 bg-red-50 ring-2 ring-red-600"
                 : "border-slate-200 hover:border-slate-400"
-            }`}
+              }`}
           >
             <p className="font-bold text-slate-900">
               Decline
